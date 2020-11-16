@@ -26,7 +26,7 @@ function setup() {
 
 	paper = new Paper(100,370);
 
-	G = new Ground(400,400);
+        G = new Ground(400,400,800,20);
  
 	Engine.run(engine);
   
@@ -51,6 +51,6 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.position,{x:185,y:-285});
+	Matter.Body.applyForce(paper.body,paper.position,{x:300,y:-400});
 	}
 }
